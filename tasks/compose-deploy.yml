@@ -1,0 +1,15 @@
+---
+
+    - name: Deploy docker-compose template
+      template:
+        src: docker-compose.yml.j2
+        dest: /root/docker-compose.yml
+      tags: template
+
+    - name: Run Docker-compose
+      docker_service:
+        project_src: /root/
+        state: present
+        build: yes
+        restarted: yes
+      tags: compose,run

@@ -1,0 +1,4 @@
+---
+    mail_smarthost: "localhost"
+
+    admin_mail: ""
