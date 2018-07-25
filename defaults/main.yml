@@ -2,3 +2,14 @@
     mail_smarthost: "localhost"
 
     admin_mail: ""
+
+    install_prefix: "/opt/SI5000"
+
+    docker_network_name: monitoring-net
+
+    volumed_services:
+      - prometheus
+      - grafana
+
+    volumes_prefix_prometheus: "{{ project_basedir }}/prometheus"
+    volumes_prefix_grafana: "{{ project_basedir }}/grafana"

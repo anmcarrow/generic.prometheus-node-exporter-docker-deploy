@@ -1,1 +1,3 @@
-    - include: compose-deploy.yml
+#    - include: compose-deploy.yml
+
+    - import_tasks: containers-deploy.yml
